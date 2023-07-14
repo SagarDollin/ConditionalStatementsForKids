@@ -4,7 +4,7 @@ import time
 from streamlit.components.v1 import html
 # Define the activities and corresponding graphics
 
-st.set_page_config(page_title="DogActivities-ConditionalStatements", initial_sidebar_state="collapsed", menu_items=None)
+st.set_page_config(page_title="DogActivities-ConditionalStatements", page_icon="images/download.jpeg", initial_sidebar_state="collapsed", menu_items=None)
 hide_streamlit_style = """
         <style>
         #MainMenu {visibility: hidden;}
