@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conditional Statements Lesson</title>
+  <style>
+    .lesson-container {
+        
+      background-color: #d3f6f7;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #262730;
+
+      width: 650px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      border-radius: 0px;
+    }
+  </style>
+  <script>
+    function printText(containerId, message) {
+      const container = document.getElementById(containerId);
+      const text = message.innerHTML;
+      message.innerHTML = '';
+
+      let index = 0;
+      const intervalId = setInterval(() => {
+        if (index >= text.length) {
+          clearInterval(intervalId);
+        } else {
+          message.innerHTML += text[index++];
+          container.style.height = message.offsetHeight + 'px';
+        }
+      }, 50);
+    }
+  </script>
+</head>
+<body>
+  <div class="lesson-container" id="lesson-container">
+    <p id="lesson-text">This is a way to teach your dog and also to make sure they behave well. In computers, we use similar conditional statements to make things happen when certain events occur. It's like giving the computer instructions, saying, "If this event happens, then do this action." It helps the computer make decisions and do specific tasks based on what's going on.</p>
+  </div>
+
+  <script>
+    printText('lesson-container', document.getElementById('lesson-text'));
+  </script>
+</body>
+</html>
