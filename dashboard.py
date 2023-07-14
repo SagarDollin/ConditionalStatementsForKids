@@ -3,6 +3,17 @@ import random
 import time
 from streamlit.components.v1 import html
 # Define the activities and corresponding graphics
+
+st.set_page_config(page_title="DogActivities-ConditionalStatements", initial_sidebar_state="collapsed", menu_items=None)
+hide_streamlit_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
 activities = {
     'Sit': '🐕‍🦺',
     'Stand': '🐕',
