@@ -12,6 +12,8 @@ activities = {
 
 # Display title and instructions
 st.title("Dog Activities")
+with st.columns(3)[2]:
+    st.text("App by Sagar B Dollin")
 st.subheader("Conditional Statements", anchor='h3')
 st.write("Today we will learn about conditional statements **If** and **Else** by teaching some activities to your virtual dog.")
 
